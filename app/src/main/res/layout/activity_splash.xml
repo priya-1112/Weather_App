@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".Splash_Activity">
+
+    <ImageView
+        android:id="@+id/cloud"
+        android:layout_width="220dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="184dp"
+        android:src="@drawable/clouds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textStyle="bold"
+        android:text="Weather Matters, \n We've got the details "
+        android:textAlignment="center"
+        android:textColor="#D4FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/cloud"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/cloud"
+        app:layout_constraintTop_toBottomOf="@id/cloud" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
